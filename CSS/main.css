@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Nunito&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+
+
+font-family: 'Nunito', sans-serif;
+
+*/
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat-Medium.woff);
+  }
+
+a{
+    font-family: "Montserrat";
+}  
+h1{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h2,
+h3{
+    font-family: 'Nunito', sans-serif;
+}
+
+p,
+li,
+label,
+span{
+    font-family: 'Roboto', sans-serif; 
+}
+
+/*index page*/
+
+/*class selector*/
+.index-header{
+    padding: 0.4em;
+    background-color: black;
+}
+
+
+.index-list{
+    list-style-type: none;
+    display: flex;
+    padding: 1em;
+    color: #fff;
+    justify-content: space-around;
+}
+.index-list li a{
+    padding: 0.2em;
+    font-size: 1.4rem;
+    text-decoration: none;   
+    color: #fff; 
+}
+.index-main p{
+    color: #413543;
+}
+/*pseudo selector*/
+.index-list li a:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.4s;
+    color: black;
+}
+
+.index-img{
+    display: grid;
+    justify-content: center;
+}
+.index-img img{
+    width: 40%;
+    margin: 2em auto;
+}
+
+.index-main h2{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.index-main h2 + h3{
+    font-size: 1.1rem;
+    margin-top: 1em;
+        text-align: center;
+}
+.p1{
+    text-align: center;
+}
+
+.second{
+    display: flex;
+    width: 70%;
+    margin: 1em auto;
+    
+}
+.second p{
+    font-size: 1rem;
+}
+.second img{
+    width: 30%;
+    height: 20%;
+    padding: 3em;
+}
+.third{
+    display: flex;
+    width: 70%;
+    margin: 1em auto;
+}
+.third img{
+    width: 30%;
+    height: 20%;
+}
+.four{
+    display: flex;
+    margin: 1em auto;
+    width: 70%;
+}
+.four img{
+    width: 30%;
+    
+    height: 10%;
+}
+.index-main p{
+    
+  
+    width: 50%;
+    margin: 3em auto;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.colon{
+    font-size: 2rem;
+}
+
+/*about*/
+.about-main{
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    justify-content: center;
+}
+.about-main img{
+    width: 40%;
+    margin: 3em auto;
+    float: left;
+}
+.about-wrapper p{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    
+    
+}
+#about-edu{
+    width: 70%;
+    margin: 2em auto;
+}
+#about-edu h2{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(83, 83, 238);
+
+}
+#about-edu h3{
+    
+    margin: 2em 0 1em 2em;
+    font-size: 1.3rem;
+}
+.skills{
+    width: 60%;
+    margin: 0 auto;
+}
+.skills h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: rgb(83, 83, 238);
+}
+.skills ul{
+    list-style-type: none;
+
+}
+.skills ul li{
+    font-size: 1.4rem;
+    line-height: 2em;
+}
+
+.about-wrapper{
+    background-color: aquamarine;
+}
+
+
+
+
+/*contact page*/
+
+.contact-main> h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2em;
+    color: rgb(83, 83, 238);
+}
+label{
+    font-size: 1.3rem;
+}
+input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.firstname{
+    grid-area: first;
+}
+.lastname{
+    grid-area: last;
+}
+.email{
+    grid-area: email;
+}
+.phone{
+    grid-area: phone;
+}
+.message{
+    grid-area: message;
+  
+}
+#button{
+    grid-area: button;
+    background-color: black;
+    width: 30%;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 10px;
+    
+}
+.form{
+    width: 50%;
+    margin: 4em auto;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "first last"
+                            "email phone"
+                            "message message"
+                            "button button";
+    gap: 2em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 20px;
+}
+.about-body{
+    background-color: aquamarine;
+}
+
+.first{
+    text-align: left;
+}
+
+/*footer*/
+footer{
+    background-color: #fff;
+}
+.icon{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+}
+.icon img{
+  
+    padding: 1em;
+    width: 20%;
+    margin-left: 40%;
+
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 700px){
+  .first p{
+    font-size: 1rem;
+  }
+  .second{
+    width: 90%;
+  }
+  .second p{
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .third{
+    width: 90%;
+  }
+  .third p{
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .four{
+    width: 90%;
+  }
+  .four p{
+    font-size: 0.8rem;
+  }
+ .about-main p{
+    font-size: 1rem;
+ }
+ .about-main h2{
+    font-size: 1.5rem;
+ }
+ .about-main h3{
+    font-size: 1.2rem;
+ }
+
+ label{
+    font-size: 0.7rem;
+ }
+ input{
+    width: 50%;
+ }
+}
